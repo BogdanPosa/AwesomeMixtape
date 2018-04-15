@@ -1,0 +1,16 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">AwesomeMixtape</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_vol1">Volume1: Chill and feel</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_vol2">Volume2: Blast from the past</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_vol3">Volume3: Love me tender</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_vol4">Volume4: Freedom of the spirit</string>
+</resources>
