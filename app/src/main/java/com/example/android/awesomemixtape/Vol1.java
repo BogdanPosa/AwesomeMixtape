@@ -45,19 +45,31 @@ public class Vol1 extends AppCompatActivity {
         SongAdapter adapter =
                 new SongAdapter(this, songs);
 
-//        ListView listView = (ListView) findViewById(R.id.list);
-//        TextView textView = (TextView) findViewById(R.id.text);
-//        textView.setText("Now playing");
-//        listView.setAdapter(adapter);
-//
+        ListView listView = (ListView) findViewById(R.id.list);
+        TextView textView = (TextView) findViewById(R.id.text);
+        textView.setText("Now playing");
+        listView.setAdapter(adapter);
+
+
+        //Setting the timer base time now from button will be changed to take automaticaly from the Song object when selecting one item
+        //TODO implement onItemSelect
 //        Button buttonset = (Button)findViewById(R.id.buttonset);
 
-        String string = "22:10";
-        String[] parts = string.split(":");
-        final String part1 = parts[0]; // minute
-        final int result1 = Integer.parseInt(part1);
-        final String part2 = parts[1]; // seconds
-        final int result2 = Integer.parseInt(part2);
+//        String string = "22:10";
+//        String[] parts = string.split(":");
+//        final String part1 = parts[0]; // minute
+//        final int result1 = Integer.parseInt(part1);
+//        final String part2 = parts[1]; // seconds
+//        final int result2 = Integer.parseInt(part2);
+
+        //        buttonset.setOnClickListener(new Button.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//                myChronometer.setBase(SystemClock.elapsedRealtime() - ((result1*60+result2) * 1000));
+//
+//            }});
 
         final Chronometer myChronometer = findViewById(R.id.chronometer);
 
@@ -93,16 +105,6 @@ public class Vol1 extends AppCompatActivity {
 
             }
         });
-
-//        buttonset.setOnClickListener(new Button.OnClickListener(){
-//
-//            @Override
-//            public void onClick(View v) {
-//                // TODO Auto-generated method stub
-//                myChronometer.setBase(SystemClock.elapsedRealtime() - ((result1*60+result2) * 1000));
-//
-//            }});
-
 
     }
 }

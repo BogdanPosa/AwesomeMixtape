@@ -8,9 +8,9 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:background="@color/primary_color"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/primary_color"
         android:orientation="vertical">
 
 
@@ -28,9 +28,9 @@
 
         <Chronometer
             android:id="@+id/chronometer"
-            android:layout_gravity="center_horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,7 +53,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_media_rew" />
-
+            <!--<Button-->
+            <!--android:id="@+id/buttonset"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" -->
+            <!--android:text="set"/>-->
         </LinearLayout>
 
     </LinearLayout>
@@ -61,9 +65,9 @@
 
     <ListView
         android:id="@+id/list"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
