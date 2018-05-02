@@ -20,9 +20,7 @@ public class Vol1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.song_list);
-
         final ArrayList<Song> songs = new ArrayList<>();
 
         songs.add(new Song("*Julian Convex - Impro*", "00:00 ", "➥ https://soundcloud.com/julianconvex"));
@@ -54,17 +52,28 @@ public class Vol1 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                System.out.println(songs.get(position));
 
-                //Setting the timer base time now from button will be changed to take automaticaly from the Song object when selecting one item
-                //TODO implement onItemSelect
-//                  String string= "22:45";
-//                  String[] parts = string.split(":");
-//        final String part1 = parts[0]; // minute
-//        final int result1 = Integer.parseInt(part1);
-//        final String part2 = parts[1]; // seconds
-//        final int result2 = Integer.parseInt(part2);
-// myChronometer.setBase(SystemClock.elapsedRealtime() - ((result1*60+result2) * 1000));
+                TextView textView = (TextView) view.findViewById(R.id.songName);
+                String text = textView.getText().toString();
+//                System.out.println("Choosen song = : " + text);
+                TextView textView2 = (TextView) findViewById(R.id.text2);
+                textView2.setText(text);
+
+                TextView textView3 = (TextView) view.findViewById(R.id.songDuration);
+                String text3 = textView3.getText().toString();
+
+//                Setting the timer base time now from button will be changed to take automaticaly from the Song object when selecting one item
+//                TODO implement onItemSelect
+                String string = text3;
+//                String[] parts = string.split(":");
+//                final String part1 = parts[0]; // minute
+//                final int result1 = Integer.parseInt(part1);
+//                final String part2 = parts[1]; // seconds
+//                final int result2 = Integer.parseInt(part2);
+//                final int time= ((result1 * 60 + result2) * 1000);
+
+                System.out.println("song duration= : " + string);
+
             }
         });
 
@@ -79,7 +88,7 @@ public class Vol1 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
+//                myChronometer.setBase(SystemClock.elapsedRealtime() - time);
                 myChronometer.start();
             }
         });
@@ -105,4 +114,6 @@ public class Vol1 extends AppCompatActivity {
         });
 
     }
+
+
 }
