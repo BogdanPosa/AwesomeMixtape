@@ -22,4 +22,9 @@ public Song (String SongName, String SongDuration, String SongSource){
     public String getSongSource(){
         return mSongSource;
     }
+
+    @Override
+    public String toString() {
+        return mSongDuration;
+    }
 }
