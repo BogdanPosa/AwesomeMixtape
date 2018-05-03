@@ -15,6 +15,10 @@ import java.util.ArrayList;
 
 public class Vol1 extends AppCompatActivity {
 
+    int time = 0;
+    Chronometer myChronometer;
+    TextView textView2;
+    Song song;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,22 +27,22 @@ public class Vol1 extends AppCompatActivity {
         setContentView(R.layout.song_list);
         final ArrayList<Song> songs = new ArrayList<>();
 
-        songs.add(new Song("*Julian Convex - Impro*", "00:00 ", "➥ https://soundcloud.com/julianconvex"));
-        songs.add(new Song("*MAXGONZ - Moon*", "03:04 ", "➥ https://soundcloud.com/maxgonz"));
-        songs.add(new Song("*ES.CE - Sweet Donut*", "06:11 ", "➥ https://soundcloud.com/es-ce"));
-        songs.add(new Song("*Jazzdrip - Special Place*", "09:22 ", "➥ https://soundcloud.com/jazzdrip"));
-        songs.add(new Song("*Alter Ego - Midnight*", "12:45 ", "➥ https://soundcloud.com/user-739456457"));
-        songs.add(new Song("*Slam53 - Back In The Days*", "16:15 ", "➥ https://soundcloud.com/slam53"));
-        songs.add(new Song("*Jovelli x Feathwr - Lucid Dreams*", "18:34 ", "➥ https://soundcloud.com/thiagojovelli"));
-        songs.add(new Song("*Mount Ten - Interference*", "21:57 ", "➥ https://soundcloud.com/mountten"));
-        songs.add(new Song("*Jungle52 - Too Much*", "24:10 ", "➥ https://soundcloud.com/jungle52"));
-        songs.add(new Song("*Furino - Parisian Rooftops*", "27:01 ", "➥ https://soundcloud.com/furino"));
-        songs.add(new Song("*Karmawin - Rough Street*", "28:55 ", "➥ https://soundcloud.com/karmawinlyon"));
-        songs.add(new Song("*Mi Ka - A Beat To Chill To*", "31:56 ", "➥ https://soundcloud.com/mikamikachu"));
-        songs.add(new Song("*XNimVn - Afro Samurai*", "34:46 ", "➥ https://soundcloud.com/minh-nguyen-61"));
-        songs.add(new Song("*Funky Fella - Curvature*", "36:44 ", "➥ https://soundcloud.com/funky_fella"));
-        songs.add(new Song("*CORC - No Justice, No Peace*", "38:48 ", "➥ https://soundcloud.com/corccey"));
-        songs.add(new Song("*Ash n' Soul - Genius Jazzy Moon*", "41:51 ", "➥ https://soundcloud.com/ashnsoul"));
+        songs.add(new Song("*Julian Convex - Impro*", "00:00", "➥ https://soundcloud.com/julianconvex"));
+        songs.add(new Song("*MAXGONZ - Moon*", "03:04", "➥ https://soundcloud.com/maxgonz"));
+        songs.add(new Song("*ES.CE - Sweet Donut*", "06:11", "➥ https://soundcloud.com/es-ce"));
+        songs.add(new Song("*Jazzdrip - Special Place*", "09:22", "➥ https://soundcloud.com/jazzdrip"));
+        songs.add(new Song("*Alter Ego - Midnight*", "12:45", "➥ https://soundcloud.com/user-739456457"));
+        songs.add(new Song("*Slam53 - Back In The Days*", "16:15", "➥ https://soundcloud.com/slam53"));
+        songs.add(new Song("*Jovelli x Feathwr - Lucid Dreams*", "18:34", "➥ https://soundcloud.com/thiagojovelli"));
+        songs.add(new Song("*Mount Ten - Interference*", "21:57", "➥ https://soundcloud.com/mountten"));
+        songs.add(new Song("*Jungle52 - Too Much*", "24:10", "➥ https://soundcloud.com/jungle52"));
+        songs.add(new Song("*Furino - Parisian Rooftops*", "27:01", "➥ https://soundcloud.com/furino"));
+        songs.add(new Song("*Karmawin - Rough Street*", "28:55", "➥ https://soundcloud.com/karmawinlyon"));
+        songs.add(new Song("*Mi Ka - A Beat To Chill To*", "31:56", "➥ https://soundcloud.com/mikamikachu"));
+        songs.add(new Song("*XNimVn - Afro Samurai*", "34:46", "➥ https://soundcloud.com/minh-nguyen-61"));
+        songs.add(new Song("*Funky Fella - Curvature*", "36:44", "➥ https://soundcloud.com/funky_fella"));
+        songs.add(new Song("*CORC - No Justice, No Peace*", "38:48", "➥ https://soundcloud.com/corccey"));
+        songs.add(new Song("*Ash n' Soul - Genius Jazzy Moon*", "41:51", "➥ https://soundcloud.com/ashnsoul"));
 
         SongAdapter adapter =
                 new SongAdapter(this, songs);
@@ -53,46 +57,47 @@ public class Vol1 extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
-                TextView textView = (TextView) view.findViewById(R.id.songName);
-                String text = textView.getText().toString();
-//                System.out.println("Choosen song = : " + text);
-                TextView textView2 = (TextView) findViewById(R.id.text2);
-                textView2.setText(text);
+                song = (Song) parent.getItemAtPosition(position);
+// stops the chronometer
+                myChronometer.stop();
+//updates the Now playing text view based on user selection
+                textView2 = (TextView) findViewById(R.id.text2);
+                textView2.setText(song.getSongName());
 
-                TextView textView3 = (TextView) view.findViewById(R.id.songDuration);
-                String text3 = textView3.getText().toString();
+// transforms the duration of the song from string to int
+                String text2 = song.toString();
+                String[] parts = text2.split(":");
+                final String part1 = parts[0]; // minute
+                int result1 = Integer.parseInt(part1);
+                final String part2 = parts[1]; // seconds
+                int result2 = Integer.parseInt(part2);
 
-//                Setting the timer base time now from button will be changed to take automaticaly from the Song object when selecting one item
-//                TODO implement onItemSelect
-                String string = text3;
-//                String[] parts = string.split(":");
-//                final String part1 = parts[0]; // minute
-//                final int result1 = Integer.parseInt(part1);
-//                final String part2 = parts[1]; // seconds
-//                final int result2 = Integer.parseInt(part2);
-//                final int time= ((result1 * 60 + result2) * 1000);
+// calculates the basetime of the Chronometer based of the duration of the selected song
+                time = ((result1 * 60 + result2) * 1000);
 
-                System.out.println("song duration= : " + string);
+// sets the time for the Chronometer for the selected song
+                myChronometer.setBase(SystemClock.elapsedRealtime() - time);
 
             }
         });
 
 
-        final Chronometer myChronometer = findViewById(R.id.chronometer);
+        myChronometer = findViewById(R.id.chronometer);
 
         ImageButton buttonStart = findViewById(R.id.play);
         ImageButton buttonStop = findViewById(R.id.pause);
         ImageButton buttonReset = findViewById(R.id.reset);
 
+        //starts the count up of the Chronometer
         buttonStart.setOnClickListener(new Button.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-//                myChronometer.setBase(SystemClock.elapsedRealtime() - time);
                 myChronometer.start();
             }
         });
 
+        //stops the count up of the Chronometer
         buttonStop.setOnClickListener(new Button.OnClickListener() {
 
             @Override
@@ -103,17 +108,16 @@ public class Vol1 extends AppCompatActivity {
             }
         });
 
+        //resets the count up of the Chronometer & update the name of the now playing song
         buttonReset.setOnClickListener(new Button.OnClickListener() {
 
             @Override
             public void onClick(View v) {
 
                 myChronometer.setBase(SystemClock.elapsedRealtime());
-
+                textView2.setText("*Julian Convex - Impro*");
             }
         });
 
     }
-
-
 }
