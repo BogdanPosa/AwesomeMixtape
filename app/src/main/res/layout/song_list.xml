@@ -27,7 +27,9 @@
         <Chronometer
             style="@style/NowPlaying"
             android:id="@+id/chronometer"
-            android:padding="@dimen/small_padding"
+            android:paddingLeft="@dimen/big_padding"
+            android:paddingRight="@dimen/big_padding"
+            android:paddingStart="@dimen/big_padding"
             android:layout_width="fill_parent" />
 
         <LinearLayout
