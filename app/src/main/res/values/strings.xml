@@ -13,4 +13,261 @@
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_vol4">Volume4: Freedom of the spirit</string>
+
+    <string name="NowPlayingInfo">Now playing:</string>
+    <string name="predefinedTextDisplayed">Song name</string>
+    <string name="toastSuggestion">Pick a song from the list</string>
+
+    <!-- Song names from volume1 -->
+    <string name="Vol1Song1Name">*Julian Convex - Impro*</string>
+    <string name="Vol1Song2Name">*MAXGONZ - Moon*</string>
+    <string name="Vol1Song3Name">*ES.CE - Sweet Donut*</string>
+    <string name="Vol1Song4Name">*Jazzdrip - Special Place*</string>
+    <string name="Vol1Song5Name">*Alter Ego - Midnight*</string>
+    <string name="Vol1Song6Name">*Slam53 - Back In The Days*</string>
+    <string name="Vol1Song7Name">*Jovelli x Feathwr - Lucid Dreams*</string>
+    <string name="Vol1Song8Name">*Mount Ten - Interference*</string>
+    <string name="Vol1Song9Name">*Jungle52 - Too Much*</string>
+    <string name="Vol1Song10Name">*Furino - Parisian Rooftops*</string>
+    <string name="Vol1Song11Name">*Karmawin - Rough Street*</string>
+    <string name="Vol1Song12Name">*Mi Ka - A Beat To Chill To*</string>
+    <string name="Vol1Song13Name">*XNimVn - Afro Samurai*</string>
+    <string name="Vol1Song14Name">*Funky Fella - Curvature*</string>
+    <string name="Vol1Song15Name">*CORC - No Justice, No Peace*</string>
+    <string name="Vol1Song16Name">*Ash n\' Soul - Genius Jazzy Moon*</string>
+
+    <!-- Song Starting times for volume1 -->
+    <string name="Vol1Song1StartTime">00:00</string>
+    <string name="Vol1Song2StartTime">03:04</string>
+    <string name="Vol1Song3StartTime">06:11</string>
+    <string name="Vol1Song4StartTime">09:22</string>
+    <string name="Vol1Song5StartTime">12:45</string>
+    <string name="Vol1Song6StartTime">16:15</string>
+    <string name="Vol1Song7StartTime">18:34</string>
+    <string name="Vol1Song8StartTime">21:57</string>
+    <string name="Vol1Song9StartTime">24:10</string>
+    <string name="Vol1Song10StartTime">27:01</string>
+    <string name="Vol1Song11StartTime">28:55</string>
+    <string name="Vol1Song12StartTime">31:56</string>
+    <string name="Vol1Song13StartTime">34:46</string>
+    <string name="Vol1Song14StartTime">36:44</string>
+    <string name="Vol1Song15StartTime">38:48</string>
+    <string name="Vol1Song16StartTime">41:51</string>
+
+    <!-- Song Ending times for volume3 -->
+    <string name="Vol1Song1EndTime">03:04</string>
+    <string name="Vol1Song2EndTime">06:11</string>
+    <string name="Vol1Song3EndTime">09:22</string>
+    <string name="Vol1Song4EndTime">12:45</string>
+    <string name="Vol1Song5EndTime">16:15</string>
+    <string name="Vol1Song6EndTime">18:34</string>
+    <string name="Vol1Song7EndTime">21:57</string>
+    <string name="Vol1Song8EndTime">24:10</string>
+    <string name="Vol1Song9EndTime">27:01</string>
+    <string name="Vol1Song10EndTime">28:55</string>
+    <string name="Vol1Song11EndTime">31:56</string>
+    <string name="Vol1Song12EndTime">34:46</string>
+    <string name="Vol1Song13EndTime">36:44</string>
+    <string name="Vol1Song14EndTime">38:48</string>
+    <string name="Vol1Song15EndTime">41:51</string>
+    <string name="Vol1Song16EndTime">45:31</string>
+
+    <!-- Song Source for volume1 -->
+    <string name="Vol1Song1Source">➥ https://soundcloud.com/julianconvex</string>
+    <string name="Vol1Song2Source">➥ https://soundcloud.com/maxgonz</string>
+    <string name="Vol1Song3Source">➥ https://soundcloud.com/es-ce</string>
+    <string name="Vol1Song4Source">➥ https://soundcloud.com/jazzdrip</string>
+    <string name="Vol1Song5Source">➥ https://soundcloud.com/user-739456457</string>
+    <string name="Vol1Song6Source">➥ https://soundcloud.com/slam53</string>
+    <string name="Vol1Song7Source">➥ https://soundcloud.com/thiagojovelli</string>
+    <string name="Vol1Song8Source">➥ https://soundcloud.com/mountten</string>
+    <string name="Vol1Song9Source">➥ https://soundcloud.com/jungle52</string>
+    <string name="Vol1Song10Source">➥ https://soundcloud.com/furino</string>
+    <string name="Vol1Song11Source">➥ https://soundcloud.com/karmawinlyon</string>
+    <string name="Vol1Song12Source">➥ https://soundcloud.com/mikamikachu</string>
+    <string name="Vol1Song13Source">➥ https://soundcloud.com/minh-nguyen-61</string>
+    <string name="Vol1Song14Source">➥ https://soundcloud.com/funky_fella</string>
+    <string name="Vol1Song15Source">➥ https://soundcloud.com/corccey</string>
+    <string name="Vol1Song16Source">➥ https://soundcloud.com/ashnsoul</string>
+
+
+    <!-- Song names from volume2 -->
+    <string name="Vol2Song1Name">*Right Behind You Baby*</string>
+    <string name="Vol2Song2Name">*Uranium Fever*</string>
+    <string name="Vol2Song3Name">*Rocket 69*</string>
+    <string name="Vol2Song4Name">*Whole Latte Shakin\' Going On*</string>
+    <string name="Vol2Song5Name">*Good Rockin Tonight*</string>
+    <string name="Vol2Song6Name">*Dear Hearts And Gentle People*</string>
+    <string name="Vol2Song7Name">*Personality*</string>
+    <string name="Vol2Song8Name">*Accentuate The Positive*</string>
+    <string name="Vol2Song9Name">*Pistol Packin\' Mama *</string>
+    <string name="Vol2Song10Name">*Sixty Minute Man *</string>
+    <string name="Vol2Song11Name">*Grandma Plays The Numbers *</string>
+    <string name="Vol2Song12Name">*Easy Living *</string>
+    <string name="Vol2Song13Name">*I Don\'t Want to Set the World on Fire *</string>
+    <string name="Vol2Song14Name">*Wonderful Guy *</string>
+    <string name="Vol2Song15Name">*Civilization *</string>
+    <string name="Vol2Song16Name">*Mighty, Mighty Man *</string>
+    <string name="Vol2Song17Name">*Undecided *</string>
+    <string name="Vol2Song18Name">*Butcher Pete (part 1) *</string>
+    <string name="Vol2Song19Name">*Anything Goes *</string>
+    <string name="Vol2Song20Name">*It\'s All Over But the Crying *</string>
+    <string name="Vol2Song21Name">*Orange Colored Sky *</string>
+    <string name="Vol2Song22Name">*The Wanderer *</string>
+
+    <!-- Song Starting times for volume2 -->
+    <string name="Vol2Song1StartTime">00:00</string>
+    <string name="Vol2Song2StartTime">02:24</string>
+    <string name="Vol2Song3StartTime">04:47</string>
+    <string name="Vol2Song4StartTime">07:30</string>
+    <string name="Vol2Song5StartTime">10:20</string>
+    <string name="Vol2Song6StartTime">13:21</string>
+    <string name="Vol2Song7StartTime">15:32</string>
+    <string name="Vol2Song8StartTime">18:21</string>
+    <string name="Vol2Song9StartTime">21:03</string>
+    <string name="Vol2Song10StartTime">24:03</string>
+    <string name="Vol2Song11StartTime">26:34</string>
+    <string name="Vol2Song12StartTime">29:14</string>
+    <string name="Vol2Song13StartTime">32:16</string>
+    <string name="Vol2Song14StartTime">35:21</string>
+    <string name="Vol2Song15StartTime">37:15</string>
+    <string name="Vol2Song16StartTime">40:20</string>
+    <string name="Vol2Song17StartTime">42:53</string>
+    <string name="Vol2Song18StartTime">46:14</string>
+    <string name="Vol2Song19StartTime">48:41</string>
+    <string name="Vol2Song20StartTime">51:51</string>
+    <string name="Vol2Song21StartTime">54:40</string>
+    <string name="Vol2Song22StartTime">57:11</string>
+
+    <!-- Song Ending times for volume3 -->
+    <string name="Vol2Song1EndTime">02:24</string>
+    <string name="Vol2Song2EndTime">04:47</string>
+    <string name="Vol2Song3EndTime">07:30</string>
+    <string name="Vol2Song4EndTime">10:20</string>
+    <string name="Vol2Song5EndTime">13:21</string>
+    <string name="Vol2Song6EndTime">15:32</string>
+    <string name="Vol2Song7EndTime">18:21</string>
+    <string name="Vol2Song8EndTime">21:03</string>
+    <string name="Vol2Song9EndTime">24:03</string>
+    <string name="Vol2Song10EndTime">26:34</string>
+    <string name="Vol2Song11EndTime">29:14</string>
+    <string name="Vol2Song12EndTime">32:16</string>
+    <string name="Vol2Song13EndTime">35:21</string>
+    <string name="Vol2Song14EndTime">37:15</string>
+    <string name="Vol2Song15EndTime">40:20</string>
+    <string name="Vol2Song16EndTime">42:53</string>
+    <string name="Vol2Song17EndTime">46:14</string>
+    <string name="Vol2Song18EndTime">48:41</string>
+    <string name="Vol2Song19EndTime">51:51</string>
+    <string name="Vol2Song20EndTime">54:40</string>
+    <string name="Vol2Song21EndTime">57:11</string>
+    <string name="Vol2Song22EndTime">60:00</string>
+
+    <!-- Song Source for volume2 -->
+    <string name="Vol2Source">➥ https://www.youtube.com/watch?v=NdN7CzbkfTE</string>
+
+    <!-- Song names from volume3 -->
+    <string name="Vol3Song1Name">*Blue Swede - Hooked On a Feeling*</string>
+    <string name="Vol3Song2Name">*Raspberries - Go All the Way*</string>
+    <string name="Vol3Song3Name">*Norman Greenbaum - Spirit In the Sky*</string>
+    <string name="Vol3Song4Name">*David Bowie - Moonage Daydream*</string>
+    <string name="Vol3Song5Name">*Elvin Bishop - Fooled Around and Fell In Love*</string>
+    <string name="Vol3Song6Name">*10cc - I\'m Not In Love*</string>
+    <string name="Vol3Song7Name">*Jackson 5 - I Want You Back *</string>
+    <string name="Vol3Song8Name">*Redbone - Come and Get Your Love*</string>
+    <string name="Vol3Song9Name">*The Runaways - Cherry Bomb *</string>
+    <string name="Vol3Song10Name">*Rupert Holmes - Escape (The Pina Colada Song)*</string>
+    <string name="Vol3Song11Name">*The Five Stairsteps - O-O-H Child*</string>
+    <string name="Vol3Song12Name"><![CDATA[*Marvin Gaye & Tammi Terrell - Ain\'t No Mountain High Enough*]]></string>
+
+    <!-- Song Starting times for volume3 -->
+    <string name="Vol3Song1StartTime">00:00</string>
+    <string name="Vol3Song2StartTime">02:52</string>
+    <string name="Vol3Song3StartTime">06:13</string>
+    <string name="Vol3Song4StartTime">10:15</string>
+    <string name="Vol3Song5StartTime">14:57</string>
+    <string name="Vol3Song6StartTime">19:31</string>
+    <string name="Vol3Song7StartTime">25:35</string>
+    <string name="Vol3Song8StartTime">28:35</string>
+    <string name="Vol3Song9tartTime">31:58</string>
+    <string name="Vol3Song10StartTime">34:15</string>
+    <string name="Vol3Song11StartTime">38:52</string>
+    <string name="Vol3Song12StartTime">42:06</string>
+
+    <!-- Song Ending times for volume3 -->
+    <string name="Vol3Song1EndTime">02:52</string>
+    <string name="Vol3Song2EndTime">06:13</string>
+    <string name="Vol3Song3EndTime">10:15</string>
+    <string name="Vol3Song4EndTime">14:57</string>
+    <string name="Vol3Song5EndTime">19:31</string>
+    <string name="Vol3Song6EndTime">25:35</string>
+    <string name="Vol3Song7EndTime">28:35</string>
+    <string name="Vol3Song8EndTime">31:58</string>
+    <string name="Vol3Song9EndTime">34:15</string>
+    <string name="Vol3Song10EndTime">38:52</string>
+    <string name="Vol3Song11EndTime">42:06</string>
+    <string name="Vol3Song12EndTime">46:26</string>
+
+    <!-- Song Source for volume3 -->
+    <string name="Vol3Source"><![CDATA[➥ https://www.youtube.com/watch?v=AoZYaUXmGB8&list=RDAoZYaUXmGB8&t=578]]></string>
+
+    <!-- Song names from volume4 -->
+    <string name="Vol4Song1Name">*Demi Lovato - Confident *</string>
+    <string name="Vol4Song2Name">*Clooney - Take Me Away *</string>
+    <string name="Vol4Song3Name">*Royal Deluxe - I\'m Gonna Do My Thing *</string>
+    <string name="Vol4Song4Name">*Dirty Gritty Revival - Big Bad Wolf *</string>
+    <string name="Vol4Song5Name">*Dirty Gritty Rocky Tasty - Devil\'s Stomp *</string>
+    <string name="Vol4Song6Name">*David Kos Rolfe - Paper Doll *</string>
+    <string name="Vol4Song7Name">*Blues Saraceno - Bad Man *</string>
+    <string name="Vol4Song8Name">*Cage The Elephant - Ain\'t No Rest For The Wicked *</string>
+    <string name="Vol4Song9Name">*David Bowie - Fame *</string>
+    <string name="Vol4Song10Name"><![CDATA[*Fujiya & Miyagi - Uh!*]]></string>
+    <string name="Vol4Song11Name">*The Black Keys- Howlin\' For You *</string>
+    <string name="Vol4Song12Name"><![CDATA[*The Delta Riggs - Street Signs & Brake Lights *]]></string>
+    <string name="Vol4Song13Name">*Beck - Devil\'s Haircut *</string>
+    <string name="Vol4Song14Name"><![CDATA[*Yogi & Skrillex - Burial (feat. Pusha T, Moody Good, TrollPhace) *]]></string>
+    <string name="Vol4Song15Name">*The Black Keys - Sinister Kid *</string>
+    <string name="Vol4Song16Name">*Donna Missal - Point Blank *</string>
+    <string name="Vol4Song17Name">*Cage The Elephant - Always Something *</string>
+
+    <!-- Song Starting times for volume4 -->
+    <string name="Vol4Song1StartTime">00:00</string>
+    <string name="Vol4Song2StartTime">03:43</string>
+    <string name="Vol4Song3StartTime">07:17</string>
+    <string name="Vol4Song4StartTime">10:27</string>
+    <string name="Vol4Song5StartTime">12:30</string>
+    <string name="Vol4Song6StartTime">15:23</string>
+    <string name="Vol4Song7StartTime">17:47</string>
+    <string name="Vol4Song8StartTime">21:10</string>
+    <string name="Vol4Song9StartTime">24:06</string>
+    <string name="Vol4Song10StartTime">28:22</string>
+    <string name="Vol4Song11StartTime">31:18</string>
+    <string name="Vol4Song12StartTime">34:28</string>
+    <string name="Vol4Song13StartTime">38:30</string>
+    <string name="Vol4Song14StartTime">41:45</string>
+    <string name="Vol4Song15StartTime">45:32</string>
+    <string name="Vol4Song16StartTime">49:17</string>
+    <string name="Vol4Song17StartTime">52:35</string>
+
+    <!-- Song Ending times for volume4 -->
+    <string name="Vol4Song1EndTime">03:43</string>
+    <string name="Vol4Song2EndTime">07:17</string>
+    <string name="Vol4Song3EndTime">10:27</string>
+    <string name="Vol4Song4EndTime">12:30</string>
+    <string name="Vol4Song5EndTime">15:23</string>
+    <string name="Vol4Song6EndTime">17:47</string>
+    <string name="Vol4Song7EndTime">21:10</string>
+    <string name="Vol4Song8EndTime">24:06</string>
+    <string name="Vol4Song9EndTime">28:22</string>
+    <string name="Vol4Song10EndTime">31:18</string>
+    <string name="Vol4Song11EndTime">34:28</string>
+    <string name="Vol4Song12EndTime">38:30</string>
+    <string name="Vol4Song13EndTime">41:45</string>
+    <string name="Vol4Song14EndTime">45:32</string>
+    <string name="Vol4Song15EndTime">49:17</string>
+    <string name="Vol4Song16EndTime">52:35</string>
+    <string name="Vol4Song17EndTime">55:55</string>
+
+    <!-- Song Source for volume1 -->
+    <string name="Vol4Source">➥ https://www.youtube.com/watch?v=5j8IR6zS8Qo</string>
 </resources>

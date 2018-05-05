@@ -4,11 +4,13 @@ public class Song {
 
     private String mSongName;
     private String mSongDuration;
+    private String mSongEnd;
     private String mSongSource;
 
-public Song (String SongName, String SongDuration, String SongSource){
+    public Song(String SongName, String SongDuration, String SongEnd, String SongSource) {
     mSongName= SongName;
     mSongDuration= SongDuration;
+        mSongEnd = SongEnd;
     mSongSource= SongSource;
 }
     public String getSongName(){
@@ -19,12 +21,12 @@ public Song (String SongName, String SongDuration, String SongSource){
         return mSongDuration;
     }
 
+    public String getSongEnd() {
+        return mSongEnd;
+    }
+
     public String getSongSource(){
         return mSongSource;
     }
 
-    @Override
-    public String toString() {
-        return mSongDuration;
-    }
 }

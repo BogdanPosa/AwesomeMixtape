@@ -1,5 +1,6 @@
 package com.example.android.awesomemixtape;
 
+import android.content.Context;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.Chronometer;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -23,33 +25,36 @@ public class Vol1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.song_list);
-        final ArrayList<Song> songs = new ArrayList<>();
 
-        songs.add(new Song("*Julian Convex - Impro*", "00:00", "➥ https://soundcloud.com/julianconvex"));
-        songs.add(new Song("*MAXGONZ - Moon*", "03:04", "➥ https://soundcloud.com/maxgonz"));
-        songs.add(new Song("*ES.CE - Sweet Donut*", "06:11", "➥ https://soundcloud.com/es-ce"));
-        songs.add(new Song("*Jazzdrip - Special Place*", "09:22", "➥ https://soundcloud.com/jazzdrip"));
-        songs.add(new Song("*Alter Ego - Midnight*", "12:45", "➥ https://soundcloud.com/user-739456457"));
-        songs.add(new Song("*Slam53 - Back In The Days*", "16:15", "➥ https://soundcloud.com/slam53"));
-        songs.add(new Song("*Jovelli x Feathwr - Lucid Dreams*", "18:34", "➥ https://soundcloud.com/thiagojovelli"));
-        songs.add(new Song("*Mount Ten - Interference*", "21:57", "➥ https://soundcloud.com/mountten"));
-        songs.add(new Song("*Jungle52 - Too Much*", "24:10", "➥ https://soundcloud.com/jungle52"));
-        songs.add(new Song("*Furino - Parisian Rooftops*", "27:01", "➥ https://soundcloud.com/furino"));
-        songs.add(new Song("*Karmawin - Rough Street*", "28:55", "➥ https://soundcloud.com/karmawinlyon"));
-        songs.add(new Song("*Mi Ka - A Beat To Chill To*", "31:56", "➥ https://soundcloud.com/mikamikachu"));
-        songs.add(new Song("*XNimVn - Afro Samurai*", "34:46", "➥ https://soundcloud.com/minh-nguyen-61"));
-        songs.add(new Song("*Funky Fella - Curvature*", "36:44", "➥ https://soundcloud.com/funky_fella"));
-        songs.add(new Song("*CORC - No Justice, No Peace*", "38:48", "➥ https://soundcloud.com/corccey"));
-        songs.add(new Song("*Ash n' Soul - Genius Jazzy Moon*", "41:51", "➥ https://soundcloud.com/ashnsoul"));
+        // creates a list of song objects
+        ArrayList<Song> songs = new ArrayList<>();
+
+        songs.add(new Song(getString(R.string.Vol1Song1Name), getString(R.string.Vol1Song1StartTime), getString(R.string.Vol1Song1EndTime), getString(R.string.Vol1Song1Source)));
+        songs.add(new Song(getString(R.string.Vol1Song2Name), getString(R.string.Vol1Song2StartTime), getString(R.string.Vol1Song2EndTime), getString(R.string.Vol1Song2Source)));
+        songs.add(new Song(getString(R.string.Vol1Song3Name), getString(R.string.Vol1Song3StartTime), getString(R.string.Vol1Song3EndTime), getString(R.string.Vol1Song3Source)));
+        songs.add(new Song(getString(R.string.Vol1Song4Name), getString(R.string.Vol1Song4StartTime), getString(R.string.Vol1Song4EndTime), getString(R.string.Vol1Song4Source)));
+        songs.add(new Song(getString(R.string.Vol1Song5Name), getString(R.string.Vol1Song5StartTime), getString(R.string.Vol1Song5EndTime), getString(R.string.Vol1Song5Source)));
+        songs.add(new Song(getString(R.string.Vol1Song6Name), getString(R.string.Vol1Song6StartTime), getString(R.string.Vol1Song6EndTime), getString(R.string.Vol1Song6Source)));
+        songs.add(new Song(getString(R.string.Vol1Song7Name), getString(R.string.Vol1Song7StartTime), getString(R.string.Vol1Song7EndTime), getString(R.string.Vol1Song7Source)));
+        songs.add(new Song(getString(R.string.Vol1Song8Name), getString(R.string.Vol1Song8StartTime), getString(R.string.Vol1Song8EndTime), getString(R.string.Vol1Song8Source)));
+        songs.add(new Song(getString(R.string.Vol1Song9Name), getString(R.string.Vol1Song9StartTime), getString(R.string.Vol1Song9EndTime), getString(R.string.Vol1Song9Source)));
+        songs.add(new Song(getString(R.string.Vol1Song10Name), getString(R.string.Vol1Song10StartTime), getString(R.string.Vol1Song10EndTime), getString(R.string.Vol1Song10Source)));
+        songs.add(new Song(getString(R.string.Vol1Song11Name), getString(R.string.Vol1Song11StartTime), getString(R.string.Vol1Song11EndTime), getString(R.string.Vol1Song11Source)));
+        songs.add(new Song(getString(R.string.Vol1Song12Name), getString(R.string.Vol1Song12StartTime), getString(R.string.Vol1Song12EndTime), getString(R.string.Vol1Song12Source)));
+        songs.add(new Song(getString(R.string.Vol1Song13Name), getString(R.string.Vol1Song13StartTime), getString(R.string.Vol1Song13EndTime), getString(R.string.Vol1Song13Source)));
+        songs.add(new Song(getString(R.string.Vol1Song14Name), getString(R.string.Vol1Song14StartTime), getString(R.string.Vol1Song14EndTime), getString(R.string.Vol1Song14Source)));
+        songs.add(new Song(getString(R.string.Vol1Song15Name), getString(R.string.Vol1Song15StartTime), getString(R.string.Vol1Song15EndTime), getString(R.string.Vol1Song15Source)));
+        songs.add(new Song(getString(R.string.Vol1Song16Name), getString(R.string.Vol1Song16StartTime), getString(R.string.Vol1Song16EndTime), getString(R.string.Vol1Song16Source)));
 
         SongAdapter adapter =
                 new SongAdapter(this, songs);
 
-        ListView listView = (ListView) findViewById(R.id.list);
-        TextView textView = (TextView) findViewById(R.id.text);
-        textView.setText("Now playing");
+        ListView listView = findViewById(R.id.list);
+        TextView textView = findViewById(R.id.text);
+        textView2 = findViewById(R.id.text2);
+
+        textView.setText(R.string.NowPlayingInfo);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -61,11 +66,10 @@ public class Vol1 extends AppCompatActivity {
 // stops the chronometer
                 myChronometer.stop();
 //updates the Now playing text view based on user selection
-                textView2 = (TextView) findViewById(R.id.text2);
                 textView2.setText(song.getSongName());
 
 // transforms the duration of the song from string to int
-                String text2 = song.toString();
+                String text2 = song.getSongDuration();
                 String[] parts = text2.split(":");
                 final String part1 = parts[0]; // minute
                 int result1 = Integer.parseInt(part1);
@@ -93,7 +97,16 @@ public class Vol1 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                myChronometer.start();
+                if (textView2.getText().equals(getString(R.string.predefinedTextDisplayed))) {
+                    Context context = getApplicationContext();
+                    CharSequence text = getString(R.string.toastSuggestion);
+                    int duration = Toast.LENGTH_SHORT;
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                } else {
+                    myChronometer.start();
+                }
+
             }
         });
 
@@ -115,9 +128,20 @@ public class Vol1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 myChronometer.setBase(SystemClock.elapsedRealtime());
-                textView2.setText("*Julian Convex - Impro*");
+                textView2.setText(R.string.Vol1Song1Name);
             }
         });
 
+        //stops the count up when the uper limit based on the selected song is reached
+        myChronometer
+                .setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
+
+                    @Override
+                    public void onChronometerTick(Chronometer chronometer) {
+                        if (chronometer.getText().toString().equalsIgnoreCase(song.getSongEnd()))
+                            myChronometer.stop();
+
+                    }
+                });
     }
 }
