@@ -23,9 +23,9 @@ public class SongAdapter extends ArrayAdapter<Song > {
      * @param Song A List of AndroidFlavor objects to display in a list
      */
     public SongAdapter(Activity context, ArrayList<Song> Song) {
-        // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
+        //  initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
-        // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
+        // Because this is a custom adapter for TextViews , the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, Song);
     }
@@ -39,7 +39,7 @@ public class SongAdapter extends ArrayAdapter<Song > {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link Word} object located at this position in the list
+        // Get the {@link Song} object located at this position in the list
         Song currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID SongName
@@ -48,15 +48,15 @@ public class SongAdapter extends ArrayAdapter<Song > {
         // set this text on the name TextView
         nameTextView.setText(currentSong.getSongName());
 
-        // Find the TextView in the list_item.xml layout with the ID englishWord
+        // Find the TextView in the list_item.xml layout with the ID SongDuration
         TextView durationTextView = (TextView) listItemView.findViewById(R.id.songDuration);
-        // Get the version number from the current AndroidFlavor object and
+        // Get the version number from the current Song object and
         // set this text on the number TextView
-        durationTextView.setText(currentSong.getSongDuration());
+        durationTextView.setText(currentSong.getSongStart());
 
-        // Find the TextView in the list_item.xml layout with the ID englishWord
+        // Find the TextView in the list_item.xml layout with the ID Song Source
         TextView sourceTextView = (TextView) listItemView.findViewById(R.id.songSource);
-        // Get the version number from the current AndroidFlavor object and
+        // Get the version number from the current Song object and
         // set this text on the number TextView
         sourceTextView.setText(currentSong.getSongSource());
 

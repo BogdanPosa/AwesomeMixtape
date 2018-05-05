@@ -65,6 +65,8 @@ public class Vol2 extends AppCompatActivity {
         textView.setText(R.string.NowPlayingInfo);
         listView.setAdapter(adapter);
 
+
+// Handles the click on an item from the list
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
@@ -77,7 +79,7 @@ public class Vol2 extends AppCompatActivity {
                 textView2.setText(song.getSongName());
 
 // transforms the duration of the song from string to int
-                String text2 = song.getSongDuration();
+                String text2 = song.getSongStart();
                 String[] parts = text2.split(":");
                 final String part1 = parts[0]; // minute
                 int result1 = Integer.parseInt(part1);
@@ -89,13 +91,10 @@ public class Vol2 extends AppCompatActivity {
 
 // sets the time for the Chronometer for the selected song
                 myChronometer.setBase(SystemClock.elapsedRealtime() - time);
-
             }
         });
 
-
         myChronometer = findViewById(R.id.chronometer);
-
         ImageButton buttonStart = findViewById(R.id.play);
         ImageButton buttonStop = findViewById(R.id.pause);
         ImageButton buttonReset = findViewById(R.id.reset);
@@ -114,7 +113,6 @@ public class Vol2 extends AppCompatActivity {
                 } else {
                     myChronometer.start();
                 }
-
             }
         });
 
@@ -148,7 +146,6 @@ public class Vol2 extends AppCompatActivity {
                     public void onChronometerTick(Chronometer chronometer) {
                         if (chronometer.getText().toString().equalsIgnoreCase(song.getSongEnd()))
                             myChronometer.stop();
-
                     }
                 });
     }

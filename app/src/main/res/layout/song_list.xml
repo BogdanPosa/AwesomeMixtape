@@ -13,24 +13,21 @@
         android:background="@color/primary_color"
         android:orientation="vertical">
 
-
         <TextView
-            style="@style/NowPlaying.Bold"
             android:id="@+id/text"
-            android:text="Now playing" />
+            style="@style/NowPlaying.Bold"
+            android:text="@string/now_playing" />
 
         <TextView
-            style="@style/NowPlaying"
-
-            android:textColor="@color/tan_background"
+            android:padding="@dimen/standard_padding"
             android:id="@+id/text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Song name" />
+            style="@style/NowPlaying"
+            android:text="@string/song_name" />
 
         <Chronometer
             style="@style/NowPlaying"
             android:id="@+id/chronometer"
+            android:padding="@dimen/small_padding"
             android:layout_width="fill_parent" />
 
         <LinearLayout
@@ -39,35 +36,30 @@
 
             <ImageButton
                 android:id="@+id/play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ImageButton"
+                android:contentDescription="@string/start"
                 app:srcCompat="@android:drawable/ic_media_play" />
 
             <ImageButton
                 android:id="@+id/pause"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ImageButton"
+                android:contentDescription="@string/pause"
                 app:srcCompat="@android:drawable/ic_media_pause" />
 
             <ImageButton
                 android:id="@+id/reset"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/ImageButton"
+                android:contentDescription="@string/reset"
                 app:srcCompat="@android:drawable/ic_media_rew" />
         </LinearLayout>
-
     </LinearLayout>
-
 
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
+        android:padding="@dimen/list_padding"
         tools:context="com.example.android.awesomemixtape.Vol1" />
 
 </LinearLayout>

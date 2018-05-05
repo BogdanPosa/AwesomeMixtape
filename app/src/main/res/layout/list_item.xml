@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-       style="SongInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/songName" />
+        android:id="@+id/songName"
+        style="@style/SongInfo.Bold" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            style="SongInfo.Bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/songDuration" />
-        <TextView
-            style="@style/SongInfo.AutoLink"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/songSource" />
-    </LinearLayout>
+            android:id="@+id/songDuration"
 
+            style="@style/SongInfo" />
+        <TextView
+            android:id="@+id/songSource"
+            style="@style/SongInfo" />
+    </LinearLayout>
 </LinearLayout>

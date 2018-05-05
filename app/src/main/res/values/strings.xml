@@ -17,6 +17,13 @@
     <string name="NowPlayingInfo">Now playing:</string>
     <string name="predefinedTextDisplayed">Song name</string>
     <string name="toastSuggestion">Pick a song from the list</string>
+    <string name="now_playing">Now playing</string>
+    <string name="song_name">Song name</string>
+    <string name="start">Starts the Chronometer</string>
+    <string name="pause">Pause the Chronometer</string>
+    <string name="reset">Resets the Chronometer to 00:00</string>
+    <string name="title">No matter how you feel there is a sound that matches your soul state.</string>
+    <string name="subtitle">Identify yours from one of the fine crafted mixtapes listed below </string>
 
     <!-- Song names from volume1 -->
     <string name="Vol1Song1Name">*Julian Convex - Impro*</string>

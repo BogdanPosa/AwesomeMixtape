@@ -28,7 +28,7 @@ public class Vol4 extends AppCompatActivity {
         setContentView(R.layout.song_list);
 
         // creates a list of song objects
-        ArrayList<Song> songs = new ArrayList<Song>();
+        ArrayList<Song> songs = new ArrayList<>();
 
         songs.add(new Song(getString(R.string.Vol4Song1Name), getString(R.string.Vol4Song1StartTime), getString(R.string.Vol4Song1EndTime), getString(R.string.Vol4Source)));
         songs.add(new Song(getString(R.string.Vol4Song2Name), getString(R.string.Vol4Song2StartTime), getString(R.string.Vol4Song2EndTime), getString(R.string.Vol4Source)));
@@ -58,6 +58,8 @@ public class Vol4 extends AppCompatActivity {
         textView.setText(R.string.NowPlayingInfo);
         listView.setAdapter(adapter);
 
+
+// Handles the click on an item from the list
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
@@ -70,7 +72,7 @@ public class Vol4 extends AppCompatActivity {
                 textView2.setText(song.getSongName());
 
 // transforms the duration of the song from string to int
-                String text2 = song.getSongDuration();
+                String text2 = song.getSongStart();
                 String[] parts = text2.split(":");
                 final String part1 = parts[0]; // minute
                 int result1 = Integer.parseInt(part1);
@@ -82,13 +84,10 @@ public class Vol4 extends AppCompatActivity {
 
 // sets the time for the Chronometer for the selected song
                 myChronometer.setBase(SystemClock.elapsedRealtime() - time);
-
             }
         });
 
-
         myChronometer = findViewById(R.id.chronometer);
-
         ImageButton buttonStart = findViewById(R.id.play);
         ImageButton buttonStop = findViewById(R.id.pause);
         ImageButton buttonReset = findViewById(R.id.reset);
@@ -107,7 +106,6 @@ public class Vol4 extends AppCompatActivity {
                 } else {
                     myChronometer.start();
                 }
-
             }
         });
 
@@ -129,7 +127,7 @@ public class Vol4 extends AppCompatActivity {
             public void onClick(View v) {
 
                 myChronometer.setBase(SystemClock.elapsedRealtime());
-                textView2.setText(R.string.Vol4Song1Name);
+                textView2.setText(R.string.Vol1Song1Name);
             }
         });
 
@@ -141,7 +139,6 @@ public class Vol4 extends AppCompatActivity {
                     public void onChronometerTick(Chronometer chronometer) {
                         if (chronometer.getText().toString().equalsIgnoreCase(song.getSongEnd()))
                             myChronometer.stop();
-
                     }
                 });
     }
