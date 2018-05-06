@@ -1,6 +1,7 @@
 package com.example.android.awesomemixtape;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -52,7 +53,6 @@ public class Vol2 extends AppCompatActivity {
         songs.add(new Song(getString(R.string.Vol2Song20Name), getString(R.string.Vol2Song20StartTime), getString(R.string.Vol2Song20EndTime), getString(R.string.Vol2Source)));
         songs.add(new Song(getString(R.string.Vol2Song21Name), getString(R.string.Vol2Song21StartTime), getString(R.string.Vol2Song21EndTime), getString(R.string.Vol2Source)));
         songs.add(new Song(getString(R.string.Vol2Song22Name), getString(R.string.Vol2Song22StartTime), getString(R.string.Vol2Song22EndTime), getString(R.string.Vol2Source)));
-
 
 
         SongAdapter adapter =
@@ -148,6 +148,21 @@ public class Vol2 extends AppCompatActivity {
                             myChronometer.stop();
                     }
                 });
-    }
+        // Find the button that returns the Main category
+        ImageButton home = findViewById(R.id.home);
 
+        // Set a click listener on that button
+        home.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the return button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link Main activity}
+                Intent MainIntent = new Intent(Vol2.this, MainActivity.class);
+
+                // Start the new activity
+                startActivity(MainIntent);
+                finish();
+            }
+        });
+    }
 }

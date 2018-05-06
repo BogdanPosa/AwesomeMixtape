@@ -53,6 +53,14 @@
                 style="@style/ImageButton"
                 android:contentDescription="@string/reset"
                 app:srcCompat="@android:drawable/ic_media_rew" />
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/home"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
         </LinearLayout>
     </LinearLayout>
 
@@ -63,7 +71,6 @@
         android:orientation="vertical"
         android:padding="@dimen/list_padding"
         tools:context="com.example.android.awesomemixtape.Vol1" />
-
 </LinearLayout>
 
 

@@ -277,4 +277,10 @@
 
     <!-- Song Source for volume1 -->
     <string name="Vol4Source">➥ https://www.youtube.com/watch?v=5j8IR6zS8Qo</string>
+    <string name="startVol2">startVol2</string>
+    <string name="startVol1">startVol1</string>
+    <string name="startVol3">startVol3</string>
+    <string name="startVol4">startVol4</string>
+    <string name="play">play</string>
+    <string name="home">home</string>
 </resources>

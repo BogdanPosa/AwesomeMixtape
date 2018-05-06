@@ -1,6 +1,7 @@
 package com.example.android.awesomemixtape;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -140,5 +141,21 @@ public class Vol1 extends AppCompatActivity {
                             myChronometer.stop();
                     }
                 });
+        // Find the button that returns the Main category
+        ImageButton home = findViewById(R.id.home);
+
+        // Set a click listener on that button
+        home.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the return button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link Main activity}
+                Intent MainIntent = new Intent(Vol1.this, MainActivity.class);
+
+                // Start the new activity
+                startActivity(MainIntent);
+                finish();
+            }
+        });
     }
 }
